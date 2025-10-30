@@ -1,8 +1,9 @@
-# Game Design Table
-| MC stats  | Base | Barbarian | Archer |
-| --------  | ---- | --------- | ------ |
-| HP        | 3    | 2         | 2.5    |
-| Speed     | 4.5  | 5         | 5      |
-| Mana      | 10   | 7         | 12     |
-| Damage    | 20   | 25        | 20     |
-| Atk.speed | 1.25 | 1.15      | 1.1    |
+# Game Design
+| MC stats    | Knight | Barbarian | Archer | Rogue |
+| ----------- | ------ | --------- | ------ | ----- |
+| HP          | 3      | 4         | 2.5    | 2.5   |
+| Speed       | 4.5    | 4         | 5      | 4.5   |
+| Mana        | 10     | 6         | 12     | 8     |
+| Damage      | 20     | 28        | 20     | 25    |
+| Atk.speed   | 1.25   | 1.15      | 1.1    | 1.1   |
+| Crit.chance | 5%     | 1%        | 12%    | 20%   |
