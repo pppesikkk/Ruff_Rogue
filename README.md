@@ -1,4 +1,6 @@
-Hello we are The OP-Team in composition Ondřej Pešan and Oleksii Prosvirnov.
+## Introduction
+Hello we are The OP-Team in composition of Ondřej Pešan and Oleksii Prosvirnov.
+We are just young lads from IT school located in Varnsdorf.
 
-We hope you'll follow us on our road throughout this and though our spaghetti code.
-See yall soon!
+## Name of the Game
+We choose Ruff Rogue
