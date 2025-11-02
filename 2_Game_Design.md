@@ -17,7 +17,7 @@ Hook: Each death spawns an heir with one or more randomized traits (positive/neg
 | Mana        | 10     | 6         | 12     | 8     |
 | Damage      | 20     | 28        | 20     | 15    |
 | Atk.speed   | 1.25   | 1.15      | 1.1    | 1.1   |
-| Crit.chance | 5%     | 1%        | 12%    | 20%   |
+| Crit.chance | 5%     | 1%        | 12%    | 18%   |
 
 
 ## Status effects
@@ -35,3 +35,19 @@ Items: equipment slots (weapon, armor, accessory1, accessory2). Some items are t
 
 ## Heir traits system
 W.I.P
+
+
+## Meta-progression categories
+
+House Upgrades (permanent): Sword Smith (+damage), Library (+XP gain), Armory (+armor), Chapel (+HP cap), Vault (+gold cap).
+
+Skill Tree: unlocked talents (double-jump, dash, charge).
+
+
+## Procedural generation rules (castle)
+
+Chunks/rooms built from a finite set of templates (combat, trap, puzzle, merchant, treasure).
+
+Flow rules: 6–12 rooms per floor, 3–4 floors per run, boss at end.
+
+Difficulty curve: enemies scale by floor number
