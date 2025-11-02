@@ -15,6 +15,3 @@ as Shia LeBeouf said "just do it! make your dreams come true." and we will deliv
 And why we making a game? It's easy to explain. Every single guy what to own something and we want our own game!
 We are heavily by Rogue Legacy, Binding of Issac and Cult of Lamb.
 
-### PS
-We hope you'll follow us on our road throughout this and though our spaghetti code.
-See yall soon!
