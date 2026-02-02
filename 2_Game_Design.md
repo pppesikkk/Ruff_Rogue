@@ -49,5 +49,13 @@ Skill Tree: unlocked talents (double-jump, dash, charge).
 Chunks/rooms built from a finite set of templates (combat, trap, puzzle, merchant, treasure).
 
 Flow rules: 6–12 rooms per floor, 3–4 floors per run, boss at end.
-
 Difficulty curve: enemies scale by floor number
+
+
+## Tutorial
+
+The tutorial will be so called "Level 0".
+When new game starts you will be given a choice whether you are a new player or played before.
+New players will be thrown to the tutorial and experienced players will be thrown to the main menu.
+
+
