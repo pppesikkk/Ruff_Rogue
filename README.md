@@ -21,4 +21,6 @@ and *Rogue* because it's rogue-like.
 
 ### PS
 We hope you'll follow us throughout our journey and alot of spaghetti code.
+
+
 [Concept](1_Concept.md)
