@@ -27,4 +27,4 @@ Here we describe what programs we'll use [ect...](1_Concept.md)
 
 ## Game Design
 So here my brother in crime cook up something tasty. Here you'll learn
-how will our game works: stats, lvl system, meta prog., [ect...](2_Game_Design.md)
+how will our game work: stats, lvl system, meta prog., [ect...](2_Game_Design.md)
