@@ -1,7 +1,7 @@
 # Graphic style
 ## My dramatic prologue
 Hi, Ondra here! So first of all i had some sketches of items, platforms, etc.
-I tried so many f*ing styles that I was losing. Well it was like 2 different, but for someone with 0 experience in this field and without graph. tablet. Holy!
+And I tried so many f*ing styles that I was losing. Well it was like 2 different, but for someone with 0 experience in this field and without graph. tablet. Holy!
 It was one painfull season. I saw it in dreams *(nightmares)*, I wanted it to be over, I walked through hell *(literally)*, but I conquered it *(somehow)*.
 
 ## Tried styles
