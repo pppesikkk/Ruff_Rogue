@@ -2,15 +2,15 @@
 
 ## The sounds are various free assets
 
-[Walking sound](audio/sfx/step.wav)
-[Sword hit](audio/sfx/sword_hit.ogg)
-[Dagger hit](audio/sfx/dagger_hit.ogg)
-[Heal](audio/sfx/heal.wav)
-[Buying](audio/sfx/buy_sell.wav)
-[Enemy hit](audio/sfx/attack_monster.wav)
-[Enemy hurt](audio/sfx/hit_monster.wav)
-[Enemy dead](audio/sfx/dead_monster.wav)
-[Talking](audio/sfx/talking.ogg)
+[Walking sound](audio/sfx/step.wav)<br>
+[Sword hit](audio/sfx/sword_hit.ogg)<br>
+[Dagger hit](audio/sfx/dagger_hit.ogg)<br>
+[Heal](audio/sfx/heal.wav)<br>
+[Buying](audio/sfx/buy_sell.wav)<br>
+[Enemy hit](audio/sfx/attack_monster.wav)<br>
+[Enemy hurt](audio/sfx/hit_monster.wav)<br>
+[Enemy dead](audio/sfx/dead_monster.wav)<br>
+[Talking](audio/sfx/talking.ogg)<br>
 [Landing after jump/fall](audio/sfx/landing.wav)
 
 ### Authors
