@@ -4,7 +4,7 @@
 
 ### Authors
 
--[jeageroni](https://itch.io/profile/jeageroni)
+-[jeageroni](https://itch.io/profile/jeageroni)<br>
 -[rgbin](https://rgbin.itch.io)
 
 
