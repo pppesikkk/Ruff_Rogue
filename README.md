@@ -14,7 +14,7 @@ and *Rogue* because it's rogue-like.
 | Game Design |  | X |
 | Graphics | X | |
 |  Sounds | X |  |
-| Music | X |  |
+| Music |  | X |
 | Implementation |  | X |
 | Development | X | X |
 | Propagation |  | X |
