@@ -5,6 +5,5 @@
 ### Authors
 
 -[jeageroni](https://itch.io/profile/jeageroni)<br>
--[rgbin](https://rgbin.itch.io)
-
-
+-[rgbin](https://rgbin.itch.io)<br>
+-[Leohpaz](https://leohpaz.itch.io)
