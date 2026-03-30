@@ -13,7 +13,7 @@ and *Rogue* because it's rogue-like.
 | Concept | X |  |
 | Game Design |  | X |
 | Graphics | X | |
-|  Sounds | Assets |
+|  Sounds | Assets | Assets |
 | Music |  | X |
 | Implementation |  | X |
 | Development | X | X |
