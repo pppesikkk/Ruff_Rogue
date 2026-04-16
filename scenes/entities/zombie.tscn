@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://db0y5wbaiw1a6"]
+
+[ext_resource type="Script" uid="uid://bm4itst6f7i3x" path="res://scripts/enemies/zombie.gd" id="1_frpv3"]
+[ext_resource type="Texture2D" uid="uid://0shsm0emabi3" path="res://Ruff_Rogue-main/3_Graphics/Sprites/Enemies/boss/boss_true_form.png" id="1_ihn6k"]
+[ext_resource type="AudioStream" uid="uid://kgdi24cfqjkf" path="res://audio/sounds/hit_monster.wav" id="3_asks5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frpv3"]
+atlas = ExtResource("1_ihn6k")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5uelr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frpv3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_asks5"]
+radius = 49.0408
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=740861863 groups=["enemies"]]
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_frpv3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=558711276]
+sprite_frames = SubResource("SpriteFrames_5uelr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=812392826]
+shape = SubResource("CircleShape2D_asks5")
+
+[node name="FloorRay" type="RayCast2D" parent="." unique_id=1721236578]
+
+[node name="hurt" type="AudioStreamPlayer2D" parent="." unique_id=2134365509]
+stream = ExtResource("3_asks5")
+volume_db = 10.0
+bus = &"SFX"

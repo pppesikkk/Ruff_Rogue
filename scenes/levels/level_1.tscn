@@ -1,0 +1,194 @@
+[gd_scene format=3 uid="uid://cfbeo5dn48t0p"]
+
+[ext_resource type="PackedScene" uid="uid://beh1d8bj0p2eq" path="res://scenes/entities/bg.tscn" id="1_ksju7"]
+[ext_resource type="PackedScene" uid="uid://bligxsesxj1r0" path="res://scenes/ground.tscn" id="2_6iamk"]
+[ext_resource type="PackedScene" uid="uid://53uyb65ov5y8" path="res://scenes/platform.tscn" id="3_nsrm0"]
+[ext_resource type="PackedScene" uid="uid://bd3i73jwm33nb" path="res://scenes/wall_left.tscn" id="3_x42e6"]
+[ext_resource type="PackedScene" uid="uid://p1ftgk0d633i" path="res://scenes/entities/player.tscn" id="5_6761a"]
+[ext_resource type="PackedScene" uid="uid://duvgpldeh87ui" path="res://scenes/column.tscn" id="6_oc4kc"]
+[ext_resource type="PackedScene" uid="uid://dr1hewn0dnse" path="res://scenes/entities/door_back.tscn" id="6_sk5k4"]
+[ext_resource type="PackedScene" uid="uid://crwv0dwdbq1by" path="res://scenes/entities/coin.tscn" id="7_s8va5"]
+[ext_resource type="PackedScene" uid="uid://cwtjy4heybtsk" path="res://scenes/entities/door_forward.tscn" id="9_qxy0u"]
+[ext_resource type="PackedScene" uid="uid://cwvq6ah51h6lr" path="res://scenes/only_top_part.tscn" id="10_excbq"]
+[ext_resource type="PackedScene" uid="uid://brup3mw6d6pud" path="res://scenes/entities/ui.tscn" id="11_excbq"]
+[ext_resource type="PackedScene" uid="uid://db0y5wbaiw1a6" path="res://scenes/entities/zombie.tscn" id="12_iav0o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x42e6"]
+size = Vector2(20, 277.14285)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8va5"]
+size = Vector2(878.88885, 20)
+
+[node name="level_1" type="Node2D" unique_id=1734491680]
+
+[node name="Control" parent="." unique_id=2088413620 instance=ExtResource("1_ksju7")]
+
+[node name="coin" parent="." unique_id=1111158890 instance=ExtResource("7_s8va5")]
+position = Vector2(693, 97)
+
+[node name="layout" type="Container" parent="." unique_id=422116435]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Area2D" parent="layout" unique_id=1920508272 instance=ExtResource("6_sk5k4")]
+position = Vector2(19, 488)
+
+[node name="ground" parent="layout" unique_id=734997099 instance=ExtResource("2_6iamk")]
+position = Vector2(-50, 528)
+
+[node name="ground3" parent="layout" unique_id=1111966619 instance=ExtResource("2_6iamk")]
+position = Vector2(645, 528)
+
+[node name="ground4" parent="layout" unique_id=157331142 instance=ExtResource("2_6iamk")]
+position = Vector2(949, 528)
+
+[node name="wall" parent="layout" unique_id=434779195 instance=ExtResource("3_x42e6")]
+position = Vector2(-103, 227)
+
+[node name="wall2" parent="layout" unique_id=1138578382 instance=ExtResource("3_x42e6")]
+position = Vector2(-103, -149)
+
+[node name="wall3" parent="layout" unique_id=1265341980 instance=ExtResource("3_x42e6")]
+position = Vector2(1063, 431)
+rotation = -3.1415925
+
+[node name="wall4" parent="layout" unique_id=1276002391 instance=ExtResource("3_x42e6")]
+position = Vector2(1063, 55)
+rotation = -3.1415925
+
+[node name="platform" parent="layout" unique_id=478668004 instance=ExtResource("3_nsrm0")]
+position = Vector2(207, 485.00003)
+scale = Vector2(0.1, 0.3)
+
+[node name="platform2" parent="layout" unique_id=643845602 instance=ExtResource("3_nsrm0")]
+position = Vector2(295, 452)
+scale = Vector2(0.1, 0.3)
+
+[node name="ground5" parent="layout" unique_id=870745262 instance=ExtResource("2_6iamk")]
+position = Vector2(457, 308)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="layout/ground5" unique_id=1584504541]
+position = Vector2(-160, 150.00003)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_x42e6")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="layout/ground5" unique_id=1293527338]
+position = Vector2(158.57144, 150.00003)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_x42e6")
+
+[node name="platform3" parent="layout" unique_id=2055943983 instance=ExtResource("3_nsrm0")]
+position = Vector2(189, 403)
+scale = Vector2(0.1, 0.3)
+
+[node name="platform4" parent="layout" unique_id=578529021 instance=ExtResource("3_nsrm0")]
+position = Vector2(74, 370)
+scale = Vector2(0.2, 0.3)
+
+[node name="platform5" parent="layout" unique_id=1662992458 instance=ExtResource("3_nsrm0")]
+position = Vector2(211, 316)
+scale = Vector2(0.15, 0.3)
+
+[node name="StaticBody2D2" parent="layout" unique_id=2100501104 instance=ExtResource("6_oc4kc")]
+position = Vector2(567, 76)
+scale = Vector2(0.45, 0.45)
+
+[node name="StaticBody2D" parent="layout" unique_id=439166876 instance=ExtResource("6_oc4kc")]
+position = Vector2(374, 76)
+scale = Vector2(0.45, 0.45)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="layout/StaticBody2D" unique_id=668996897]
+position = Vector2(213.88885, 180.00002)
+shape = SubResource("RectangleShape2D_s8va5")
+
+[node name="platform6" parent="layout" unique_id=2003871642 instance=ExtResource("3_nsrm0")]
+position = Vector2(718, 266)
+scale = Vector2(0.1, 0.3)
+
+[node name="platform7" parent="layout" unique_id=1508814643 instance=ExtResource("3_nsrm0")]
+position = Vector2(815, 227)
+scale = Vector2(0.1, 0.3)
+
+[node name="platform8" parent="layout" unique_id=959471949 instance=ExtResource("3_nsrm0")]
+position = Vector2(925, 182)
+scale = Vector2(0.1, 0.3)
+
+[node name="platform9" parent="layout" unique_id=1080781650 instance=ExtResource("3_nsrm0")]
+position = Vector2(804, 140)
+scale = Vector2(0.2, 0.3)
+
+[node name="platform10" parent="layout" unique_id=454570131 instance=ExtResource("3_nsrm0")]
+position = Vector2(693, 122)
+scale = Vector2(0.1, 0.3)
+
+[node name="Area2D2" parent="layout" unique_id=255830412 instance=ExtResource("9_qxy0u")]
+position = Vector2(941, 488)
+
+[node name="StaticBody2D3" parent="layout" unique_id=1908217012 instance=ExtResource("10_excbq")]
+position = Vector2(930.00006, 440.00003)
+scale = Vector2(0.08, 0.3)
+
+[node name="Player" parent="." unique_id=1494905155 instance=ExtResource("5_6761a")]
+position = Vector2(68, 491)
+
+[node name="Control2" parent="." unique_id=1303834659 instance=ExtResource("11_excbq")]
+
+[node name="SpawnPoint" type="Node2D" parent="." unique_id=404231509]
+position = Vector2(56, 488)
+
+[node name="CharacterBody2D" parent="." unique_id=740861863 instance=ExtResource("12_iav0o")]
+position = Vector2(52, 335)
+patrol_points_path = NodePath("../enemy1")
+
+[node name="enemy1" type="Node2D" parent="." unique_id=1605870063]
+position = Vector2(52, 335)
+scale = Vector2(0.4, 0.4)
+
+[node name="Marker1" type="Marker2D" parent="enemy1" unique_id=991749059]
+position = Vector2(-55, 17.5)
+
+[node name="Marker2" type="Marker2D" parent="enemy1" unique_id=1253156825]
+position = Vector2(150.00006, 17.5)
+
+[node name="CharacterBody2D2" parent="." unique_id=853498018 instance=ExtResource("12_iav0o")]
+position = Vector2(352.99997, 276)
+patrol_points_path = NodePath("../enemy2")
+
+[node name="enemy2" type="Node2D" parent="." unique_id=209755421]
+position = Vector2(52, 335)
+scale = Vector2(0.4, 0.4)
+
+[node name="Marker1" type="Marker2D" parent="enemy2" unique_id=153636397]
+position = Vector2(684.99994, -144.99998)
+
+[node name="Marker2" type="Marker2D" parent="enemy2" unique_id=778645660]
+position = Vector2(1307.4998, -147.49998)
+
+[node name="CharacterBody2D3" parent="." unique_id=1459468079 instance=ExtResource("12_iav0o")]
+position = Vector2(773.99994, 111.000015)
+patrol_points_path = NodePath("../enemy3")
+
+[node name="enemy3" type="Node2D" parent="." unique_id=1775012378]
+position = Vector2(472.99997, 170.00002)
+scale = Vector2(0.4, 0.4)
+
+[node name="Marker1" type="Marker2D" parent="enemy3" unique_id=693672524]
+position = Vector2(725.00006, -145.00002)
+
+[node name="Marker2" type="Marker2D" parent="enemy3" unique_id=604704759]
+position = Vector2(905.0001, -150.00002)
+
+[node name="CharacterBody2D4" parent="." unique_id=830751513 instance=ExtResource("12_iav0o")]
+position = Vector2(732, 486)
+patrol_points_path = NodePath("../enemy4")
+
+[node name="enemy4" type="Node2D" parent="." unique_id=4731883]
+position = Vector2(413, 544)
+scale = Vector2(0.4, 0.4)
+
+[node name="Marker1" type="Marker2D" parent="enemy4" unique_id=1908373635]
+position = Vector2(497.50006, -132.50002)
+
+[node name="Marker2" type="Marker2D" parent="enemy4" unique_id=671810737]
+position = Vector2(1185, -145.00002)

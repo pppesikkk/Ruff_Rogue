@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://53uyb65ov5y8"]
+
+[ext_resource type="Texture2D" uid="uid://ce2df1t6e0aai" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/platform.png" id="1_ba0x2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlgqw"]
+size = Vector2(500, 29)
+
+[node name="platform" type="StaticBody2D" unique_id=478668004]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2085970875]
+modulate = Color(1.5720325, 1.5720325, 1.5720325, 1)
+texture = ExtResource("1_ba0x2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1442594]
+position = Vector2(0, -12.5)
+shape = SubResource("RectangleShape2D_nlgqw")
+one_way_collision = true

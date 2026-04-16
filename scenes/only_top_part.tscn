@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cwvq6ah51h6lr"]
+
+[ext_resource type="Texture2D" uid="uid://djpnxyg2sg6ox" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/top_only.png" id="1_tawsg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_721h5"]
+size = Vector2(500, 30)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1908217012]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=993585455]
+texture = ExtResource("1_tawsg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=828209732]
+position = Vector2(0, 50)
+shape = SubResource("RectangleShape2D_721h5")

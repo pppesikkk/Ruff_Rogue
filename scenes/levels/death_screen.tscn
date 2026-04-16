@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://clctyb352o7ot"]
+
+[ext_resource type="Texture2D" uid="uid://rpjhx0jet4ki" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/Background.png" id="1_f3ad6"]
+[ext_resource type="Script" uid="uid://clgeh4vmv1m1e" path="res://scripts/menu/death_screen.gd" id="1_s86ko"]
+[ext_resource type="FontFile" uid="uid://c1eol5ve2ei06" path="res://font/MorrisRomanBlack.ttf" id="2_s86ko"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m2min"]
+texture = ExtResource("1_f3ad6")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ha0r0"]
+bg_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control" unique_id=616909681]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s86ko")
+
+[node name="Panel" type="Panel" parent="." unique_id=760406804]
+layout_mode = 0
+offset_right = 960.0
+offset_bottom = 540.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_m2min")
+
+[node name="Label" type="Label" parent="." unique_id=1708189431]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.0
+offset_top = -103.0
+offset_right = 133.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_s86ko")
+theme_override_font_sizes/font_size = 80
+text = "You died"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="main_menu" type="Button" parent="." unique_id=2067620783]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -97.5
+offset_top = -220.0
+offset_right = 97.5
+offset_bottom = -190.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_s86ko")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ha0r0")
+text = "Back to Main Menu"
+
+[connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]

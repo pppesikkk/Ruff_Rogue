@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dr1hewn0dnse"]
+
+[ext_resource type="Script" uid="uid://cr0ilawugyjlm" path="res://scripts/door_back.gd" id="1_i51jw"]
+[ext_resource type="Texture2D" uid="uid://d0vhuhay410ya" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/door_hole.png" id="2_i51jw"]
+[ext_resource type="FontFile" uid="uid://c1eol5ve2ei06" path="res://font/MorrisRomanBlack.ttf" id="3_i51jw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jyu2s"]
+radius = 6.0
+height = 50.0
+
+[node name="Area2D" type="Area2D" unique_id=1920508272]
+script = ExtResource("1_i51jw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=289878263]
+texture = ExtResource("2_i51jw")
+region_enabled = true
+region_rect = Rect2(0, 7.2923884, 19.240234, 58.51152)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1329397028]
+shape = SubResource("CapsuleShape2D_jyu2s")
+
+[node name="Label" type="Label" parent="." unique_id=1104738344]
+visible = false
+offset_left = 3.0
+offset_top = -54.0
+offset_right = 67.0
+offset_bottom = -21.0
+theme_override_fonts/font = ExtResource("3_i51jw")
+text = "Can't turn
+back now"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

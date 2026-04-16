@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://b0da76x8vnn8t"]
+
+[ext_resource type="Script" uid="uid://b8otv77biukq3" path="res://scripts/menu/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://rpjhx0jet4ki" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/Background.png" id="1_l6cm7"]
+[ext_resource type="FontFile" uid="uid://c1eol5ve2ei06" path="res://font/MorrisRomanBlack.ttf" id="2_ekxnf"]
+[ext_resource type="Script" uid="uid://djwpcjvapd5lt" path="res://scripts/menu/start_btn.gd" id="4_wu84c"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ekxnf"]
+texture = ExtResource("1_l6cm7")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(2243.022, 397.64835, 1033.8696, 693.84143)
+modulate_color = Color(0.585062, 0.585062, 0.5850621, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
+bg_color = Color(0.4506483, 0.4506483, 0.45064825, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+shadow_color = Color(0, 0, 0, 0.30980393)
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.4533912, 0.4485612, 0.3660542, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="MainMenu" type="Control" unique_id=1379691166]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bqqt6")
+
+[node name="Panel" type="Panel" parent="." unique_id=2106664197]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ekxnf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1369903182]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.66046
+offset_top = -57.0
+offset_right = 153.66046
+offset_bottom = 202.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="start_btn" type="Button" parent="VBoxContainer" unique_id=447324164]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.8653781, 0.8796709, 0.8960387, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 10
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+text = "Start game"
+script = ExtResource("4_wu84c")
+
+[node name="PopupPanel" type="PopupPanel" parent="VBoxContainer/start_btn" unique_id=1917989566]
+oversampling_override = 1.0
+initial_position = 2
+size = Vector2i(400, 200)
+visible = true
+theme_override_styles/panel = SubResource("StyleBoxFlat_wu84c")
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/start_btn/PopupPanel" unique_id=335592853]
+offset_right = 400.0
+offset_bottom = 200.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/start_btn/PopupPanel/CenterContainer" unique_id=968473255]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer" unique_id=1506820487]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+text = "Pick one"
+
+[node name="game_start_btn" type="Button" parent="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer" unique_id=1169536548]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 20
+text = "Actual Game"
+
+[node name="tutorial_btn" type="Button" parent="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer" unique_id=1247682276]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 20
+text = "Tutorial"
+
+[node name="cancel_btn" type="Button" parent="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer" unique_id=958490034]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 12
+text = "Cancel"
+
+[node name="options_btn" type="Button" parent="VBoxContainer" unique_id=841236624]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.8653781, 0.8796709, 0.8960387, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 10
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+text = "Options"
+
+[node name="quit_btn" type="Button" parent="VBoxContainer" unique_id=1006786759]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.8653781, 0.8796709, 0.8960387, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 10
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+text = "Quit"
+
+[node name="Label" type="Label" parent="." unique_id=1677093677]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -161.73914
+offset_top = 37.0
+offset_right = 161.73914
+offset_bottom = 223.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 80
+text = "Ruff Rogue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=215063315]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 35.0
+offset_top = -27.0
+offset_right = 192.09091
+offset_bottom = 27.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8666667, 0.8784314, 0.89411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ln24")
+text = "SHOP"
+
+[connection signal="pressed" from="VBoxContainer/start_btn" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer/game_start_btn" to="." method="_on_game_start_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer/tutorial_btn" to="." method="_on_tutorial_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_btn/PopupPanel/CenterContainer/VBoxContainer/cancel_btn" to="." method="_on_cancel_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/options_btn" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit_btn" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

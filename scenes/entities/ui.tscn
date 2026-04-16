@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://brup3mw6d6pud"]
+
+[ext_resource type="Texture2D" uid="uid://bhotmj24atrm6" path="res://Ruff_Rogue-main/3_Graphics/Sprites/coin.png" id="1_imqek"]
+[ext_resource type="Script" uid="uid://bj5yh8nlngwxd" path="res://scenes/entities/ui.gd" id="1_xd5vt"]
+[ext_resource type="FontFile" uid="uid://c1eol5ve2ei06" path="res://font/MorrisRomanBlack.ttf" id="2_xd5vt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sxk8q"]
+bg_color = Color(0.29090574, 0.37229264, 0.07601126, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.019215116, 0.25039074, 2.4065375e-08, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Control" type="Control" unique_id=1303834659]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 960.0
+offset_bottom = 540.0
+script = ExtResource("1_xd5vt")
+
+[node name="UI" type="Control" parent="." unique_id=772856214]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=2055734218]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 52.0
+offset_right = 177.0
+offset_bottom = 70.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/HBoxContainer" unique_id=821439956]
+layout_mode = 2
+texture = ExtResource("1_imqek")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="UI/HBoxContainer" unique_id=513031315]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xd5vt")
+theme_override_font_sizes/font_size = 18
+text = "0"
+
+[node name="health_bar" type="ProgressBar" parent="UI" unique_id=319399251]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 28.0
+offset_right = 199.66667
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 16
+theme_override_styles/fill = SubResource("StyleBoxFlat_sxk8q")
+max_value = 3.0
+step = 0.1
+value = 3.0
+show_percentage = false

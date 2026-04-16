@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://beh1d8bj0p2eq"]
+
+[ext_resource type="Script" uid="uid://bqtu6004n1fsk" path="res://scripts/menu/bg.gd" id="1_3knbq"]
+
+[node name="Control" type="Control" unique_id=2088413620]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 960.0
+offset_bottom = 540.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2023123581]
+modulate = Color(0.9699662, 0.9699662, 0.9699662, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 6
+script = ExtResource("1_3knbq")

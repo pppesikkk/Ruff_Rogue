@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://crwv0dwdbq1by"]
+
+[ext_resource type="Script" uid="uid://bdcp7rugyjbrj" path="res://scripts/player/coin.gd" id="1_14ges"]
+[ext_resource type="Texture2D" uid="uid://bhotmj24atrm6" path="res://Ruff_Rogue-main/3_Graphics/Sprites/coin.png" id="1_sao8m"]
+[ext_resource type="AudioStream" uid="uid://b2hqiohcqrsko" path="res://audio/sounds/coin_pickup.mp3" id="3_6b0am"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_14ges"]
+radius = 24.0
+
+[node name="coin" type="Area2D" unique_id=1111158890]
+scale = Vector2(0.35, 0.35)
+script = ExtResource("1_14ges")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=794691965]
+texture = ExtResource("1_sao8m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1023262674]
+shape = SubResource("CircleShape2D_14ges")
+
+[node name="pickup_sound" type="AudioStreamPlayer2D" parent="." unique_id=2018142688]
+stream = ExtResource("3_6b0am")
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

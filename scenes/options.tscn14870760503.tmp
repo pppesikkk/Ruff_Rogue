@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://di2vk25yuy504"]
+
+[ext_resource type="Script" uid="uid://b6fwiuex6qaae" path="res://scripts/menu/options.gd" id="1_2iy26"]
+[ext_resource type="Texture2D" uid="uid://rpjhx0jet4ki" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/Background.png" id="1_c2u1v"]
+[ext_resource type="FontFile" uid="uid://c1eol5ve2ei06" path="res://font/MorrisRomanBlack.ttf" id="2_yjkok"]
+[ext_resource type="PackedScene" uid="uid://4ntnqkg7rsi5" path="res://scenes/volume_slider.tscn" id="4_kv8mn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yjkok"]
+texture = ExtResource("1_c2u1v")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yjkok"]
+bg_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kv8mn"]
+bg_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control" unique_id=1950880157]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2iy26")
+
+[node name="Panel" type="Panel" parent="." unique_id=1556741885]
+layout_mode = 0
+offset_right = 960.0
+offset_bottom = 540.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_yjkok")
+
+[node name="Label" type="Label" parent="." unique_id=2042485361]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -130.0
+offset_top = 78.0
+offset_right = 130.0
+offset_bottom = 130.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 60
+text = "OPTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back_to_menu" type="Button" parent="." unique_id=1522720424]
+layout_mode = 1
+offset_left = 31.0
+offset_top = 30.0
+offset_right = 71.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.8666667, 0.8784314, 0.89411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yjkok")
+text = "<"
+icon_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=685929877]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.60275
+offset_top = -55.0
+offset_right = 196.60278
+offset_bottom = 129.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer" unique_id=574042395]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 40
+text = "Sound"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=762129644]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 25
+text = "Master"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="master" parent="VBoxContainer" unique_id=996080293 instance=ExtResource("4_kv8mn")]
+layout_mode = 2
+value = 1.0
+bus_name = "Master"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=101133386]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 25
+text = "Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="music" parent="VBoxContainer" unique_id=1434114282 instance=ExtResource("4_kv8mn")]
+layout_mode = 2
+value = 1.0
+bus_name = "Music"
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=653547602]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 25
+text = "SFX"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sfx" parent="VBoxContainer" unique_id=1786001435 instance=ExtResource("4_kv8mn")]
+layout_mode = 2
+value = 1.0
+bus_name = "SFX"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=442391016]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.00003
+offset_top = -108.0
+offset_right = 96.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=91805765]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 40
+text = "Fullscreen"
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer" unique_id=209724213]
+layout_mode = 2
+
+[node name="main_menu" type="Button" parent="." unique_id=1083887726]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -97.5
+offset_top = -109.0
+offset_right = 97.5
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_yjkok")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_kv8mn")
+text = "Back to Main Menu"
+
+[connection signal="pressed" from="back_to_menu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="toggled" from="HBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]

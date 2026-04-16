@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bd3i73jwm33nb"]
+
+[ext_resource type="Texture2D" uid="uid://bjhr7hbdeo6uw" path="res://Ruff_Rogue-main/3_Graphics/Dungeon/tiles.png" id="1_lrn8p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6q4mu"]
+size = Vector2(375.5, 23)
+
+[node name="wall" type="StaticBody2D" unique_id=434779195]
+position = Vector2(-101, -102)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2041050442]
+position = Vector2(-0.24996948, 101.75003)
+rotation = 1.5707964
+scale = Vector2(0.7510001, 0.7510001)
+texture = ExtResource("1_lrn8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34765012]
+position = Vector2(101, 102)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_6q4mu")
