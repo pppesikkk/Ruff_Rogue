@@ -1,3 +1,5 @@
+# To play [itch.io](download at https://pros-qn65.itch.io/ruff-rogue)
+
 ## Introduction
 Hello we are The OP-Team in composition of Ondřej Pešan and Oleksii Prosvirnov.
 We are just young lads from IT school located in Varnsdorf.
