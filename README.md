@@ -1,4 +1,4 @@
-# To play [itch.io](download at https://pros-qn65.itch.io/ruff-rogue)
+# To play download at [itch.io](https://pros-qn65.itch.io/ruff-rogue)
 
 ## Introduction
 Hello we are The OP-Team in composition of Ondřej Pešan and Oleksii Prosvirnov.
