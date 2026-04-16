@@ -7,3 +7,6 @@ Music is made by using 2 AI bots: [Gemini](https://gemini.google.com/app) and [C
 
 ## Background music
 [Audio](audio/music/bg_music.mp3)
+
+## BossFight music
+[Audio](audio/music/boss_fight.mp3)
