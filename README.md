@@ -13,13 +13,13 @@ and *Rogue* because it's rogue-like.
 | Type of work | Pešan           | Prosvirnov  |
 | :-------------: |:-------------:| :-----:|
 | Concept | X |  |
-| Game Design |  | X |
+| Game Design | X | X |
 | Graphics | X | |
 |  Sounds | Assets | Assets |
 | Music |  | X |
 | Implementation |  | X |
-| Development | X | X |
-| Propagation |  | X |
+| Development |  | X |
+| Propagation | X| X |
 
 ## PS
 We hope you'll follow us throughout our journey and alot of spaghetti code.
